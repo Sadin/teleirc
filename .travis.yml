@@ -4,12 +4,11 @@ language: node_js
 cache: yarn
 
 node_js:
-  - 6
-  - 7
   - 8
+
 before_install:
-  - cp .env.example .env
-  - cp config.js.example config.js
+  - cp env.example .env
+
 install:
   - yarn
   - yarn global add nodeunit
